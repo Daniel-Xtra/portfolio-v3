@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with gradient -->
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0ea5e9"/>
+      <stop offset="50%" style="stop-color:#0ea5e9;stop-opacity:0.9"/>
+      <stop offset="100%" style="stop-color:#64ffda"/>
+    </linearGradient>
+    <linearGradient id="overlay1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:white;stop-opacity:0.2"/>
+      <stop offset="100%" style="stop-color:transparent"/>
+    </linearGradient>
+    <linearGradient id="overlay2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:transparent"/>
+      <stop offset="100%" style="stop-color:white;stop-opacity:0.1"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Main rounded rectangle with gradient -->
+  <rect width="32" height="32" rx="6" fill="url(#gradient)"/>
+  
+  <!-- Overlay gradients -->
+  <rect width="32" height="32" rx="6" fill="url(#overlay1)"/>
+  <rect width="32" height="32" rx="6" fill="url(#overlay2)"/>
+  
+  <!-- DA Text -->
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" fill="white" font-family="monospace" font-weight="bold" font-size="16" letter-spacing="0.1em">DA</text>
+</svg> 
