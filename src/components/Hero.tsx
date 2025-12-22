@@ -1,19 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {
-  Download,
-  Github,
-  Linkedin,
-  Twitter,
-  Code2,
-  Palette,
-  Cpu,
-  Wrench,
-  ArrowRight,
-  Mail,
-} from "lucide-react";
-import { Button } from "./Button";
+import { Github, Linkedin, Twitter, Mail } from "lucide-react";
 
 export function Hero() {
   return (

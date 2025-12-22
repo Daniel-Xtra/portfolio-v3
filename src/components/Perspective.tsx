@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, ReactNode } from "react";
-import { motion, useScroll, useTransform, useInView } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 interface PerspectiveProps {
   children: ReactNode;

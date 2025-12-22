@@ -1,35 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import {
-  Github,
-  Linkedin,
-  Twitter,
-  Mail,
-  ArrowUpRight,
-  Clock,
-  ArrowRight,
-  Sparkles,
-} from "lucide-react";
-import { Magnetic } from "./Magnetic";
-
-const footerLinks = {
-  socials: [
-    {
-      name: "LinkedIn",
-      href: "https://linkedin.com/in/danielakanbi1",
-      icon: Linkedin,
-    },
-    { name: "GitHub", href: "https://github.com/Daniel-Xtra", icon: Github },
-    {
-      name: "Twitter",
-      href: "https://twitter.com/danielakanbi1",
-      icon: Twitter,
-    },
-    { name: "Email", href: "mailto:danielakanbi01@gmail.com", icon: Mail },
-  ],
-};
+import { ArrowUpRight, ArrowRight } from "lucide-react";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
