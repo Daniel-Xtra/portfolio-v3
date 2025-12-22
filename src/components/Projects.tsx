@@ -109,7 +109,7 @@ export function Projects() {
               </div>
 
               <div className="flex-1 flex flex-col justify-center">
-                <span className="text-[10px] font-black uppercase tracking-[0.4em] text-slate-400 mb-4 sm:mb-6 block">
+                <span className="text-[10px] font-black uppercase tracking-[0.4em] text-slate-600 dark:text-slate-400 mb-4 sm:mb-6 block">
                   0{i + 1} / Featured
                 </span>
                 <h3 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-black mb-6 sm:mb-8 tracking-tighter text-slate-900 dark:text-white group-hover:text-indigo-600 transition-colors uppercase">
@@ -122,7 +122,7 @@ export function Projects() {
                   {p.tech.map((t) => (
                     <span
                       key={t}
-                      className="text-[9px] font-black uppercase tracking-[0.3em] text-slate-400 group-hover:text-indigo-400 transition-colors"
+                      className="text-[9px] font-black uppercase tracking-[0.3em] text-slate-600 dark:text-slate-400 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors"
                     >
                       {t}
                     </span>

@@ -174,7 +174,7 @@ export function Header() {
                         className={`group relative flex items-center justify-between py-4 transition-all ${
                           activeSection === item.href
                             ? "text-indigo-600 dark:text-white"
-                            : "text-slate-400 dark:text-slate-500"
+                            : "text-slate-600 dark:text-slate-300"
                         }`}
                       >
                         <span className="text-sm font-mono opacity-50">
@@ -203,7 +203,7 @@ export function Header() {
                   transition={{ delay: 0.9 }}
                   className="flex flex-col gap-1"
                 >
-                  <p className="text-[10px] font-black uppercase tracking-[0.4em] text-slate-400">
+                  <p className="text-[10px] font-black uppercase tracking-[0.4em] text-slate-600 dark:text-slate-400">
                     Initiate
                   </p>
                   <a
@@ -243,7 +243,7 @@ export function Header() {
                             ? undefined
                             : "noopener noreferrer"
                         }
-                        className="w-10 h-10 rounded border border-slate-200 dark:border-white/10 flex items-center justify-center text-[10px] font-black text-slate-500 hover:bg-slate-900 hover:text-white dark:hover:bg-white dark:hover:text-slate-950 transition-all font-mono"
+                        className="w-10 h-10 rounded border border-slate-200 dark:border-white/10 flex items-center justify-center text-[10px] font-black text-slate-700 dark:text-slate-400 hover:bg-slate-900 hover:text-white dark:hover:bg-white dark:hover:text-slate-950 transition-all font-mono"
                       >
                         {social.label}
                       </motion.a>
