@@ -110,7 +110,7 @@ export function Hero() {
                     Performance Engine
                   </span>
                 </div>
-                <span className="text-[8px] font-mono text-slate-400 uppercase tracking-widest">
+                <span className="text-[8px] font-mono text-slate-600 dark:text-slate-400 uppercase tracking-widest">
                   v4.0.2-stable
                 </span>
               </div>
@@ -164,7 +164,7 @@ export function Hero() {
                     key={metric.label}
                     className="p-4 rounded-xl bg-white/5 border border-white/10 text-center group/metric hover:border-indigo-500/50 transition-colors"
                   >
-                    <p className="text-[9px] font-black text-slate-500 dark:text-slate-400 uppercase tracking-widest mb-1">
+                    <p className="text-[9px] font-black text-slate-700 dark:text-slate-300 uppercase tracking-widest mb-1">
                       {metric.label}
                     </p>
                     <p className="text-lg font-bold text-slate-900 dark:text-white mb-2 leading-none">
@@ -182,7 +182,7 @@ export function Hero() {
               <div className="absolute bottom-8 left-8 right-8 flex items-center justify-between pt-8 border-t border-white/5">
                 <div className="flex items-center gap-2">
                   <div className="w-1.5 h-1.5 rounded-full bg-indigo-500"></div>
-                  <span className="text-[9px] font-bold text-slate-400 uppercase tracking-wider">
+                  <span className="text-[9px] font-bold text-slate-600 dark:text-slate-400 uppercase tracking-wider">
                     Core Web Vitals Passing
                   </span>
                 </div>
@@ -205,7 +205,7 @@ export function Hero() {
               <div className="flex flex-col gap-2">
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 rounded-full bg-indigo-500"></div>
-                  <span className="text-[8px] font-black text-slate-400 uppercase tracking-widest">
+                  <span className="text-[8px] font-black text-slate-600 dark:text-slate-400 uppercase tracking-widest">
                     SSR STATUS
                   </span>
                 </div>

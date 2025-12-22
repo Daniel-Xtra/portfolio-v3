@@ -77,7 +77,7 @@ export function Experience() {
                   <p className="text-xl sm:text-2xl lg:text-3xl font-black tracking-tighter mb-4 text-slate-900 dark:text-white group-hover:text-indigo-600 transition-colors uppercase">
                     {exp.company}
                   </p>
-                  <span className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-400">
+                  <span className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-600 dark:text-slate-400">
                     {exp.period}
                   </span>
                 </div>
@@ -92,7 +92,7 @@ export function Experience() {
                     {exp.tech.map((t) => (
                       <span
                         key={t}
-                        className="text-[9px] font-black uppercase tracking-[0.4em] text-slate-300 dark:text-slate-600 group-hover:text-indigo-600/60 dark:group-hover:text-indigo-400/60 transition-colors"
+                        className="text-[9px] font-black uppercase tracking-[0.4em] text-slate-600 dark:text-slate-400 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors"
                       >
                         {t}
                       </span>

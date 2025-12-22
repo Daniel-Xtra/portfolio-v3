@@ -5,19 +5,33 @@ import "./globals.css";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  display: "swap",
+  preload: true,
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  display: "swap",
+  preload: true,
 });
 
 export const metadata: Metadata = {
   title: "Daniel Akanbi | Frontend Developer",
-  description: "Professional portfolio showcasing frontend engineering expertise and UI/UX design.",
-  keywords: ["Frontend Developer", "Web Development", "React", "Next.js", "TypeScript", "UI/UX", "Tailwind CSS", "Web Animations"],
+  description:
+    "Professional portfolio showcasing frontend engineering expertise and UI/UX design.",
+  keywords: [
+    "Frontend Developer",
+    "Web Development",
+    "React",
+    "Next.js",
+    "TypeScript",
+    "UI/UX",
+    "Tailwind CSS",
+    "Web Animations",
+  ],
   icons: {
-    icon: '/favicon.svg',
+    icon: "/favicon.svg",
   },
 };
 

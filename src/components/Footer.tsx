@@ -48,7 +48,7 @@ export function Footer() {
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </div>
               </a>
-              <p className="text-sm text-slate-400 dark:text-slate-500 font-mono">
+              <p className="text-sm text-slate-600 dark:text-slate-400 font-mono">
                 danielakanbi01@gmail.com
               </p>
             </div>
@@ -56,14 +56,14 @@ export function Footer() {
         </div>
 
         <div className="pt-12 border-t border-slate-200 dark:border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="flex flex-col md:flex-row items-center gap-6 text-[10px] font-black uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400">
+          <div className="flex flex-col md:flex-row items-center gap-6 text-[10px] font-black uppercase tracking-[0.2em] text-slate-700 dark:text-slate-400">
             <span>© {currentYear} DANIEL AKANBI</span>
           </div>
 
           <motion.button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             whileHover={{ y: -3 }}
-            className="flex items-center gap-4 group text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors"
+            className="flex items-center gap-4 group text-slate-700 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors"
           >
             <span className="text-[9px] font-black tracking-[0.3em]">
               Back to top
