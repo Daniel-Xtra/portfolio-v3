@@ -5,48 +5,42 @@ import { Github, Linkedin, Twitter, Mail } from "lucide-react";
 
 export function Hero() {
   return (
-    <section className="relative min-h-[100dvh] flex flex-col justify-center pt-24 sm:pt-32 lg:pt-20 pb-20 overflow-hidden">
-      <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-indigo-600/5 rounded-full blur-[120px] -z-10 animate-blob"></div>
-      <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-purple-600/5 rounded-full blur-[120px] -z-10 animate-blob animation-delay-2000"></div>
+    <section className="relative min-h-[100dvh] flex flex-col justify-center pt-24 sm:pt-32 lg:pt-20 pb-20 overflow-hidden bg-background">
+      {/* Background decoration - subtle, solid, professional */}
+      <div className="absolute top-0 right-0 w-1/3 h-full bg-slate-50 dark:bg-slate-900/50 -z-10 hidden lg:block border-l border-slate-100 dark:border-slate-800/50"></div>
 
-      <div className="max-w-[1400px] mx-auto px-6 sm:px-12 lg:px-24 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 items-start">
-        <div className="lg:col-span-12 xl:col-span-7 relative z-10 pt-10 sm:pt-20">
+      <div className="max-w-[1400px] mx-auto px-6 sm:px-12 lg:px-24 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 items-center">
+        <div className="lg:col-span-7 relative z-10 pt-10 sm:pt-20">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             className="group"
           >
-            <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black text-slate-900 dark:text-white mb-8 sm:mb-12 tracking-tighter leading-[0.85]">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-sm font-medium mb-8">
+              <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
+              Available for new projects
+            </div>
+
+            <h1 className="text-5xl sm:text-7xl lg:text-8xl font-bold text-slate-900 dark:text-white mb-8 sm:mb-12 tracking-tight leading-[0.9]">
               DANIEL
               <br />
-              <span className="text-outline-indigo dark:text-outline-white opacity-70 group-hover:opacity-100 transition-opacity duration-700">
-                AKANBI
-              </span>
+              <span className="text-slate-500 dark:text-slate-400">AKANBI</span>
             </h1>
 
             <div className="flex flex-col gap-12 mb-12 sm:mb-16">
               <div className="max-w-2xl">
-                <div className="space-y-6 text-base sm:text-lg text-slate-500 dark:text-slate-400 leading-relaxed tracking-tight font-medium">
-                  <p className="text-slate-900 dark:text-white font-bold text-xl sm:text-3xl lg:text-4xl tracking-tight leading-[1.1] mb-8">
+                <div className="space-y-6 text-base sm:text-lg text-slate-600 dark:text-slate-400 leading-relaxed font-normal">
+                  <p className="text-slate-900 dark:text-slate-200 font-semibold text-xl sm:text-2xl tracking-tight leading-snug mb-6">
                     Frontend engineer building accessible, high-performance
-                    interfaces that bridge complex engineering and premium
-                    aesthetics.
+                    interfaces that bridge engineering and design.
                   </p>
 
                   <p>
                     I specialize in the architecture and delivery of modern web
                     applications, ensuring every pixel is backed by robust,
                     scalable code. Currently, I focus on engineering reactive
-                    frontend solutions and modular component systems for global
-                    brands.
-                  </p>
-
-                  <p>
-                    Over the course of my career, I&apos;ve engineered technical
-                    solutions across diverse sectors—from agribusiness engines
-                    at Agenpo and health-tech platforms at MOBicure to pilot
-                    logistics systems.
+                    frontend solutions and modular component systems.
                   </p>
                 </div>
               </div>
@@ -83,7 +77,7 @@ export function Hero() {
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.8 + idx * 0.1 }}
-                  className="w-12 h-12 rounded-xl bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10 flex items-center justify-center hover:border-indigo-500/50 hover:bg-white dark:hover:bg-white/10 text-slate-500 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-white transition-all duration-300"
+                  className="w-12 h-12 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex items-center justify-center hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all duration-200"
                   title={social.name}
                 >
                   <social.icon className="w-5 h-5" />
@@ -93,127 +87,99 @@ export function Hero() {
           </motion.div>
         </div>
 
-        <div className="hidden lg:block lg:col-span-12 xl:col-span-5 relative mt-20">
-          <div className="relative w-full aspect-square max-w-[500px] mx-auto">
-            <div className="absolute inset-0 bg-indigo-500/10 blur-[100px] rounded-full animate-pulse"></div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.5 }}
-              className="absolute inset-0 p-8 glass-card rounded-3xl border-white/10 backdrop-blur-2xl z-20 shadow-2xl overflow-hidden group/dashboard"
-            >
-              <div className="flex items-center justify-between mb-8">
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 rounded-full bg-indigo-500 animate-pulse"></div>
-                  <span className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-900 dark:text-white">
-                    Performance Engine
-                  </span>
-                </div>
-                <span className="text-[8px] font-mono text-slate-600 dark:text-slate-400 uppercase tracking-widest">
-                  v4.0.2-stable
-                </span>
-              </div>
-
-              <div className="relative h-48 mb-8 rounded-2xl bg-slate-950/50 border border-white/5 overflow-hidden">
-                <svg
-                  viewBox="0 0 400 150"
-                  className="absolute inset-0 w-full h-full"
-                >
-                  <motion.path
-                    d="M 0 100 Q 50 80 100 110 T 200 70 T 300 90 T 400 60"
+        <div className="hidden lg:block lg:col-span-5 relative">
+          <div className="hidden lg:block lg:col-span-5 relative h-full min-h-[500px] flex items-center">
+            <div className="relative w-full max-w-[500px] mx-auto grid grid-cols-2 gap-4">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                className="col-span-2 p-8 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xl"
+              >
+                <div className="w-10 h-10 rounded-lg bg-indigo-50 dark:bg-slate-800 flex items-center justify-center mb-4 text-indigo-600 dark:text-indigo-400">
+                  <svg
+                    className="w-5 h-5"
                     fill="none"
-                    stroke="url(#gradient-emerald)"
-                    strokeWidth="3"
-                    initial={{ pathLength: 0 }}
-                    animate={{ pathLength: 1 }}
-                    transition={{
-                      duration: 2,
-                      repeat: Infinity,
-                      repeatType: "reverse",
-                    }}
-                  />
-                  <defs>
-                    <linearGradient
-                      id="gradient-emerald"
-                      x1="0%"
-                      y1="0%"
-                      x2="100%"
-                      y2="0%"
-                    >
-                      <stop offset="0%" stopColor="#10b981" stopOpacity="0" />
-                      <stop offset="50%" stopColor="#10b981" stopOpacity="1" />
-                      <stop offset="100%" stopColor="#10b981" stopOpacity="0" />
-                    </linearGradient>
-                  </defs>
-                </svg>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="text-4xl font-black text-white/5 tracking-tighter">
-                    OPTIMIZED
-                  </span>
-                </div>
-              </div>
-
-              <div className="grid grid-cols-3 gap-4">
-                {[
-                  { label: "LCP", value: "0.8s", score: "100" },
-                  { label: "FID", value: "11ms", score: "100" },
-                  { label: "CLS", value: "0.01", score: "100" },
-                ].map((metric) => (
-                  <div
-                    key={metric.label}
-                    className="p-4 rounded-xl bg-white/5 border border-white/10 text-center group/metric hover:border-indigo-500/50 transition-colors"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth="2"
                   >
-                    <p className="text-[9px] font-black text-slate-700 dark:text-slate-300 uppercase tracking-widest mb-1">
-                      {metric.label}
-                    </p>
-                    <p className="text-lg font-bold text-slate-900 dark:text-white mb-2 leading-none">
-                      {metric.value}
-                    </p>
-                    <div className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-emerald-500/10 border border-emerald-500/20">
-                      <span className="text-[10px] font-bold text-emerald-500">
-                        {metric.score}
-                      </span>
-                    </div>
-                  </div>
-                ))}
-              </div>
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M13 10V3L4 14h7v7l9-11h-7z"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-2">
+                  High Performance
+                </h3>
+                <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                  Obsessed with Core Web Vitals. Building interfaces that load
+                  instantly and interact smoothly at 60fps.
+                </p>
+              </motion.div>
 
-              <div className="absolute bottom-8 left-8 right-8 flex items-center justify-between pt-8 border-t border-white/5">
-                <div className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full bg-indigo-500"></div>
-                  <span className="text-[9px] font-bold text-slate-600 dark:text-slate-400 uppercase tracking-wider">
-                    Core Web Vitals Passing
-                  </span>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                className="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-lg"
+              >
+                <div className="w-8 h-8 rounded-md bg-emerald-50 dark:bg-slate-800 flex items-center justify-center mb-3 text-emerald-600 dark:text-emerald-400">
+                  <svg
+                    className="w-4 h-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
                 </div>
-                <div className="h-4 w-24 bg-white/5 rounded-full overflow-hidden">
-                  <motion.div
-                    className="h-full bg-gradient-to-r from-indigo-500 to-emerald-500"
-                    initial={{ width: "0%" }}
-                    animate={{ width: "100%" }}
-                    transition={{ duration: 1.5, delay: 1 }}
-                  />
-                </div>
-              </div>
-            </motion.div>
+                <h3 className="text-sm font-bold text-slate-900 dark:text-white mb-1">
+                  Precision
+                </h3>
+                <p className="text-xs text-slate-600 dark:text-slate-400">
+                  Pixel-perfect implementation of design.
+                </p>
+              </motion.div>
 
-            <motion.div
-              animate={{ y: [0, -10, 0] }}
-              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -bottom-6 -right-6 p-5 glass-card rounded-2xl border-white/10 backdrop-blur-xl z-30 shadow-2xl hidden xl:block"
-            >
-              <div className="flex flex-col gap-2">
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 rounded-full bg-indigo-500"></div>
-                  <span className="text-[8px] font-black text-slate-600 dark:text-slate-400 uppercase tracking-widest">
-                    SSR STATUS
-                  </span>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.7 }}
+                className="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-lg"
+              >
+                <div className="w-8 h-8 rounded-md bg-blue-50 dark:bg-slate-800 flex items-center justify-center mb-3 text-blue-600 dark:text-blue-400">
+                  <svg
+                    className="w-4 h-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+                    />
+                  </svg>
                 </div>
-                <span className="text-xs font-bold text-slate-900 dark:text-white">
-                  HYDRATED
-                </span>
-              </div>
-            </motion.div>
+                <h3 className="text-sm font-bold text-slate-900 dark:text-white mb-1">
+                  Scalable
+                </h3>
+                <p className="text-xs text-slate-600 dark:text-slate-400">
+                  Architecture ready for growth.
+                </p>
+              </motion.div>
+
+              <div className="absolute -z-10 inset-0 bg-gradient-to-tr from-slate-100 to-transparent dark:from-slate-800/20 dark:to-transparent blur-3xl opacity-50 rounded-full transform translate-y-12"></div>
+            </div>
           </div>
         </div>
       </div>
