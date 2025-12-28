@@ -22,7 +22,7 @@ export function Footer() {
           >
             <div className="flex items-center justify-center sm:justify-start gap-3 mb-8">
               <div className="w-8 h-px bg-slate-400 dark:bg-slate-600"></div>
-              <span className="text-[10px] font-bold uppercase tracking-[0.4em] text-slate-500 dark:text-slate-400">
+              <span className="text-[10px] font-bold uppercase tracking-[0.4em] text-slate-600 dark:text-slate-400">
                 Available for new opportunities
               </span>
             </div>
@@ -38,14 +38,14 @@ export function Footer() {
             <div className="flex flex-col sm:flex-row items-center sm:items-center gap-10">
               <a
                 href="mailto:danielakanbi01@gmail.com"
-                className="group relative flex items-center gap-4 text-xl sm:text-2xl font-medium text-slate-900 dark:text-white hover:text-slate-600 dark:hover:text-slate-300 transition-colors duration-300"
+                className="group relative flex items-center gap-4 text-xl sm:text-2xl font-medium text-slate-900 dark:text-white hover:text-slate-700 dark:hover:text-slate-300 transition-colors duration-300"
               >
                 Start a conversation
                 <div className="w-12 h-12 rounded-full border border-slate-300 dark:border-slate-700 flex items-center justify-center group-hover:bg-slate-900 dark:group-hover:bg-white group-hover:border-slate-900 dark:group-hover:border-white transition-all duration-300">
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform group-hover:text-white dark:group-hover:text-slate-900" />
                 </div>
               </a>
-              <p className="text-sm text-slate-500 dark:text-slate-400 font-mono">
+              <p className="text-sm text-slate-600 dark:text-slate-400 font-mono">
                 danielakanbi01@gmail.com
               </p>
             </div>
@@ -53,14 +53,14 @@ export function Footer() {
         </div>
 
         <div className="pt-12 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="flex flex-col md:flex-row items-center gap-6 text-[10px] font-bold uppercase tracking-[0.2em] text-slate-500 dark:text-slate-500">
+          <div className="flex flex-col md:flex-row items-center gap-6 text-[10px] font-bold uppercase tracking-[0.2em] text-slate-600 dark:text-slate-500">
             <span>© {currentYear} DANIEL AKANBI</span>
           </div>
 
           <motion.button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             whileHover={{ y: -3 }}
-            className="flex items-center gap-4 group text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors"
+            className="flex items-center gap-4 group text-slate-700 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors"
           >
             <span className="text-[9px] font-bold tracking-[0.3em] uppercase">
               Back to top

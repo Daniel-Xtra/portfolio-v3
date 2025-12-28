@@ -49,7 +49,7 @@ export function Experience() {
     >
       <div className="max-w-[1400px] mx-auto">
         <div className="mb-20 sm:mb-28">
-          <span className="text-[10px] font-black uppercase tracking-[0.5em] text-indigo-600 dark:text-indigo-400 mb-6 block">
+          <span className="text-[10px] font-black uppercase tracking-[0.5em] text-indigo-700 dark:text-indigo-400 mb-6 block">
             Career
           </span>
           <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tighter leading-none text-slate-900 dark:text-white">
@@ -69,7 +69,7 @@ export function Experience() {
             >
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 border-t border-slate-900/10 dark:border-white/10 pt-12 sm:pt-16 hover:border-indigo-500 transition-colors duration-500">
                 <div className="lg:col-span-1">
-                  <span className="text-lg sm:text-xl font-black text-indigo-600 dark:text-indigo-400 opacity-20 group-hover:opacity-100 transition-opacity">
+                  <span className="text-lg sm:text-xl font-black text-indigo-700 dark:text-indigo-400 opacity-20 group-hover:opacity-100 transition-opacity">
                     0{i + 1}
                   </span>
                 </div>
@@ -77,7 +77,7 @@ export function Experience() {
                   <p className="text-xl sm:text-2xl lg:text-3xl font-black tracking-tighter mb-4 text-slate-900 dark:text-white group-hover:text-indigo-600 transition-colors uppercase">
                     {exp.company}
                   </p>
-                  <span className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-600 dark:text-slate-400">
+                  <span className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-700 dark:text-slate-400">
                     {exp.period}
                   </span>
                 </div>
@@ -85,14 +85,14 @@ export function Experience() {
                   <h3 className="text-base sm:text-lg font-bold mb-6 sm:mb-8 uppercase tracking-widest text-slate-900 dark:text-white">
                     {exp.role}
                   </h3>
-                  <p className="text-base sm:text-lg text-slate-500 dark:text-slate-400 mb-10 sm:mb-12 leading-relaxed tracking-tight max-w-2xl">
+                  <p className="text-base sm:text-lg text-slate-600 dark:text-slate-400 mb-10 sm:mb-12 leading-relaxed tracking-tight max-w-2xl">
                     {exp.description}
                   </p>
                   <div className="flex flex-wrap gap-x-6 gap-y-4 sm:gap-8">
                     {exp.tech.map((t) => (
                       <span
                         key={t}
-                        className="text-[9px] font-black uppercase tracking-[0.4em] text-slate-600 dark:text-slate-400 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors"
+                        className="text-[9px] font-black uppercase tracking-[0.4em] text-slate-700 dark:text-slate-400 group-hover:text-indigo-700 dark:group-hover:text-indigo-400 transition-colors"
                       >
                         {t}
                       </span>
