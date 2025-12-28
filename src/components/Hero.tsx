@@ -111,9 +111,9 @@ export function Hero() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-2">
+                <h2 className="text-lg font-bold text-slate-900 dark:text-white mb-2">
                   High Performance
-                </h3>
+                </h2>
                 <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
                   Obsessed with Core Web Vitals. Building interfaces that load
                   instantly and interact smoothly at 60fps.
@@ -141,9 +141,9 @@ export function Hero() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-sm font-bold text-slate-900 dark:text-white mb-1">
+                <h2 className="text-sm font-bold text-slate-900 dark:text-white mb-1">
                   Precision
-                </h3>
+                </h2>
                 <p className="text-xs text-slate-600 dark:text-slate-400">
                   Pixel-perfect implementation of design.
                 </p>
@@ -170,9 +170,9 @@ export function Hero() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-sm font-bold text-slate-900 dark:text-white mb-1">
+                <h2 className="text-sm font-bold text-slate-900 dark:text-white mb-1">
                   Scalable
-                </h3>
+                </h2>
                 <p className="text-xs text-slate-600 dark:text-slate-400">
                   Architecture ready for growth.
                 </p>
