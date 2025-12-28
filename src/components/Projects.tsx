@@ -43,14 +43,14 @@ export function Projects() {
       <div className="max-w-[1400px] mx-auto">
         <div className="mb-20 sm:mb-28 flex flex-col md:flex-row md:items-end justify-between gap-8 sm:gap-12">
           <div className="max-w-xl">
-            <span className="text-[10px] font-black uppercase tracking-[0.5em] text-indigo-600 dark:text-indigo-400 mb-6 block">
+            <span className="text-[10px] font-black uppercase tracking-[0.5em] text-indigo-700 dark:text-indigo-400 mb-6 block">
               Portfolio
             </span>
             <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tighter leading-none text-slate-900 dark:text-white">
               Work.
             </h2>
           </div>
-          <p className="text-base sm:text-lg text-slate-500 dark:text-slate-400 max-w-xs leading-relaxed tracking-tight">
+          <p className="text-base sm:text-lg text-slate-600 dark:text-slate-400 max-w-xs leading-relaxed tracking-tight">
             A selection of my recent works, where engineering meets aesthetics.
           </p>
         </div>
@@ -108,20 +108,20 @@ export function Projects() {
               </div>
 
               <div className="flex-1 flex flex-col justify-center">
-                <span className="text-[10px] font-black uppercase tracking-[0.4em] text-slate-600 dark:text-slate-400 mb-4 sm:mb-6 block">
+                <span className="text-[10px] font-black uppercase tracking-[0.4em] text-slate-700 dark:text-slate-400 mb-4 sm:mb-6 block">
                   0{i + 1} / Featured
                 </span>
                 <h3 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-black mb-6 sm:mb-8 tracking-tighter text-slate-900 dark:text-white group-hover:text-indigo-600 transition-colors uppercase">
                   {p.title}
                 </h3>
-                <p className="text-base sm:text-lg text-slate-500 dark:text-slate-400 mb-8 sm:mb-12 leading-relaxed tracking-tight">
+                <p className="text-base sm:text-lg text-slate-600 dark:text-slate-400 mb-8 sm:mb-12 leading-relaxed tracking-tight">
                   {p.description}
                 </p>
                 <div className="flex flex-wrap gap-x-6 gap-y-4 sm:gap-8">
                   {p.tech.map((t) => (
                     <span
                       key={t}
-                      className="text-[9px] font-black uppercase tracking-[0.3em] text-slate-600 dark:text-slate-400 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors"
+                      className="text-[9px] font-black uppercase tracking-[0.3em] text-slate-700 dark:text-slate-400 group-hover:text-indigo-700 dark:group-hover:text-indigo-400 transition-colors"
                     >
                       {t}
                     </span>
