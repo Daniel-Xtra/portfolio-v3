@@ -91,7 +91,6 @@ export function Projects() {
                         className="w-full sm:w-auto"
                       >
                         Live Demo
-                        <ExternalLink className="w-4 h-4 ml-1" />
                       </Button>
                       <Button
                         href={p.github}
