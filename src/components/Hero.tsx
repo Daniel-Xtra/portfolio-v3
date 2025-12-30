@@ -5,8 +5,7 @@ import { Github, Linkedin, Twitter, Mail } from "lucide-react";
 
 export function Hero() {
   return (
-    <section className="relative min-h-[100dvh] flex flex-col justify-center pt-24 sm:pt-32 lg:pt-20 pb-20 overflow-hidden bg-background">
-      {/* Background decoration - subtle, solid, professional */}
+    <section className="relative lg:min-h-[100dvh] flex flex-col justify-center pt-24 sm:pt-32 lg:pt-20 pb-20 overflow-hidden bg-background">
       <div className="absolute top-0 right-0 w-1/3 h-full bg-slate-50 dark:bg-slate-900/50 -z-10 hidden lg:block border-l border-slate-100 dark:border-slate-800/50"></div>
 
       <div className="max-w-[1400px] mx-auto px-6 sm:px-12 lg:px-24 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 items-center">

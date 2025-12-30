@@ -9,10 +9,10 @@ export function Footer() {
   return (
     <footer
       id="contact"
-      className="relative bg-slate-100 dark:bg-[#0f172a] text-slate-900 dark:text-white pt-32 pb-12 overflow-hidden border-t border-slate-200 dark:border-slate-800"
+      className="relative bg-slate-100 dark:bg-[#0f172a] text-slate-900 dark:text-white pt-24 sm:pt-32 lg:pt-20 pb-12 overflow-hidden border-t border-slate-200 dark:border-slate-800"
     >
       <div className="max-w-[1400px] mx-auto px-6 sm:px-12 lg:px-24 relative z-10">
-        <div className="mb-32">
+        <div className="mb-24">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
